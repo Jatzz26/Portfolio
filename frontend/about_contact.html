@@ -158,7 +158,6 @@
                 THE ENGINEERING EDITORIAL
             </a>
 <div class="hidden md:flex gap-12 items-center">
-<a class="font-['Space_Grotesk'] tracking-tight text-zinc-400 hover:text-white transition-colors" href="/home">Home</a>
 <a class="font-['Space_Grotesk'] tracking-tight text-zinc-400 hover:text-white transition-colors" href="/experience">Experience</a>
 <a class="font-['Space_Grotesk'] tracking-tight text-zinc-400 hover:text-white transition-colors" href="/projects">Projects</a>
 <a class="font-['Space_Grotesk'] tracking-tight text-cyan-400 border-b-2 border-cyan-400 pb-1" href="/about">About</a>
@@ -169,7 +168,9 @@
 <span class="material-symbols-outlined text-sm group-hover:animate-bounce">download</span>
 <span>Download CV</span>
 </button>
-
+<button class="bg-primary-container text-on-primary-fixed px-6 py-2 rounded-lg font-['Space_Grotesk'] font-bold hover:scale-105 transition-transform duration-200 active:scale-95" onclick="window.location.href='/connect'">
+                    Get in Touch
+                </button>
 </div>
 </div>
 </nav>
@@ -238,8 +239,12 @@
 <div class="md:col-span-2 relative group overflow-hidden rounded-lg min-h-[300px]">
 <div class="scanner-line"></div>
 <div class="absolute inset-0 bg-surface-container-highest flex items-center justify-center overflow-hidden">
-<img alt="Jatin Pathak" class="absolute inset-0 w-full h-full object-cover scale-110 object-top grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 filter transition-all duration-700" src="/public/jatin.jpeg"/>
-<div class="absolute inset-0 tech-grid opacity-40 group-hover:opacity-10 transition-opacity"></div>
+<svg class="w-full h-full opacity-30 animate-[spin_60s_linear_infinite]" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<circle cx="50" cy="50" fill="none" r="48" stroke="#69daff" stroke-dasharray="4 4" stroke-width="0.5"></circle>
+<circle cx="50" cy="50" fill="none" r="38" stroke="#00cffc" stroke-dasharray="10 5" stroke-width="1"></circle>
+<path d="M50 5 L50 15 M50 85 L50 95 M5 50 L15 50 M85 50 L95 50" stroke="#69daff" stroke-width="1"></path>
+</svg>
+<div class="absolute inset-0 tech-grid opacity-40"></div>
 </div>
 <!-- HUD Overlay Elements -->
 <div class="absolute inset-0 bg-primary/5 hidden group-hover:block transition-all pointer-events-none"></div>

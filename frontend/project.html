@@ -131,13 +131,14 @@
 <div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto w-full">
 <a class="text-xl font-bold tracking-tighter text-white uppercase" href="/home">JATIN PATHAK</a>
 <div class="hidden md:flex items-center gap-12">
-<a class="text-zinc-400 hover:text-white transition-colors font-['Space_Grotesk'] tracking-tight" href="/home">Home</a>
 <a class="text-zinc-400 hover:text-white transition-colors font-['Space_Grotesk'] tracking-tight" href="/experience">Experience</a>
 <a class="text-cyan-400 border-b-2 border-cyan-400 pb-1 font-['Space_Grotesk'] tracking-tight" href="/projects">Projects</a>
 <a class="text-zinc-400 hover:text-white transition-colors font-['Space_Grotesk'] tracking-tight" href="/about">About</a>
 <a class="text-zinc-400 hover:text-white transition-colors font-['Space_Grotesk'] tracking-tight" href="/connect">Contact</a>
 </div>
-
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-6 py-2.5 rounded-lg font-medium hover:scale-105 transition-transform duration-200 active:scale-95" onclick="window.location.href='/connect'">
+                Get in Touch
+            </button>
 </div>
 </nav>
 <main class="pt-32 pb-24">
@@ -178,7 +179,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1px bg-outline-variant/10 overflow-hidden">
 <!-- Project Card 1: WanderLust - Large Featured -->
 <article class="group relative md:col-span-2 aspect-[16/9] md:aspect-auto md:h-[600px] bg-surface-container-high overflow-hidden">
-<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Travel listing platform" src="/public/wanderlust.jpg"/>
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Travel listing platform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRYAGAcmXv4dcRifzg6MY_TwVuY6bnexjE1sl4OcLJF5sk1lo071eKGwSYZzMnHCKOGUdgcJ4ozwxrjEQqi0Ay1r7y8MzEScDYg_QdPmbqm_FOZuGjzWohooYdVrnEq_wZvbcYJvs6B2teX67swE4ZFSDKBZfJwG9Nc3YDDenh4DO5ANwmiV5uaCsKxfVHe_tRNsWMGQLmG-BiNAtdKswIFI1a00dyZyhDRHxFzN9olMUYESRakKYVj3vn0f55vv4KV_Ld40l7QL2d"/>
 <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
 <div class="absolute bottom-0 left-0 p-8 md:p-12 w-full">
 <div class="flex flex-wrap gap-2 mb-6">
@@ -189,22 +190,16 @@
 <p class="text-on-surface-variant max-w-xl mb-8 line-clamp-2 md:line-clamp-none text-lg"><strong class="text-primary-dim">Travel Platform:</strong> A full-stack property listing web app for creating, viewing, updating, and deleting listings. Built with <span class="text-on-surface">REST APIs, MongoDB via Mongoose, and EJS server-side rendering</span>. Includes auth, authorization, and form validation.</p>
 <div class="flex flex-wrap items-center justify-between gap-6">
 <div class="flex gap-4">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="w-6 h-6 hover:scale-110 transition-transform cursor-none interactive" title="Node.js"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" class="w-6 h-6 bg-zinc-100 p-0.5 rounded hover:scale-110 transition-transform cursor-none interactive" title="Express.js"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" class="w-6 h-6 hover:scale-110 transition-transform cursor-none interactive" title="MongoDB"/>
-<span class="text-xs font-label text-zinc-500 uppercase tracking-widest pt-1 px-1">EJS</span>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" class="w-6 h-6 hover:scale-110 transition-transform cursor-none interactive" title="Bootstrap"/>
+<span class="text-xs font-label text-zinc-500 uppercase tracking-widest">Node.js</span>
+<span class="text-xs font-label text-zinc-500 uppercase tracking-widest">Express.js</span>
+<span class="text-xs font-label text-zinc-500 uppercase tracking-widest">MongoDB</span>
+<span class="text-xs font-label text-zinc-500 uppercase tracking-widest">EJS</span>
+<span class="text-xs font-label text-zinc-500 uppercase tracking-widest">Bootstrap</span>
 </div>
-<div class="flex items-center gap-6">
-<a class="flex items-center gap-2 text-primary/70 hover:text-primary transition-colors" href="https://wanderlust-8ueg.onrender.com/listings" target="_blank" rel="noopener noreferrer">
-<span class="material-symbols-outlined text-lg">open_in_new</span>
-<span class="text-sm font-label uppercase tracking-widest">View Live</span>
-</a>
-<a class="flex items-center gap-2 text-primary group-hover:translate-x-2 transition-transform" href="https://github.com/Jatzz26/wanderlust" target="_blank" rel="noopener noreferrer">
+<a class="flex items-center gap-2 text-primary group-hover:translate-x-2 transition-transform" href="https://github.com/Jatzz26" target="_blank" rel="noopener noreferrer">
 <span class="text-sm font-label uppercase tracking-widest">View on GitHub</span>
 <span class="material-symbols-outlined text-lg">arrow_forward</span>
 </a>
-</div>
 </div>
 </div>
 </article>
@@ -212,7 +207,7 @@
 <article class="group relative bg-surface-container-low p-8 flex flex-col justify-between">
 <div class="mb-12">
 <div class="aspect-square bg-surface-container-highest mb-8 overflow-hidden rounded-lg">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100" data-alt="Mental health support platform" src="/public/mann_mitr.jpg"/>
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100" data-alt="Mental health support platform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDstED_gQHTOpyxkxLH5Eyy4VR3fbnX6GNPRqDhI9oZgUs6P2eLJG-SnApiWPVBQ3pvruOVSEZ7ITuQkhekhte5QL4DfYwNP6S71hc_ut9tIr58ndfpS1_cAMzfqZcE6cgg5UFsguXk5edo5n27benbWCvTTkvqSUrrEbuqt1fZqlAaqT64GH4Sel4DOM2jFmLKIo6GEgqIhCYkE8Qv2tZ8rbYjRqquoa_ghpIwR35mjLBhTsC7X1EkHpsjAH3lfCZwM-m8OWGhVTQL"/>
 </div>
 <span class="text-[10px] font-label tracking-[0.2em] uppercase text-tertiary mb-2 block">Hackathon Project</span>
 <h3 class="text-2xl font-bold mb-4">MITR (MaanMitr)</h3>
@@ -220,27 +215,22 @@
 </div>
 <div>
 <div class="flex flex-wrap gap-3 mb-6">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-6 h-6 hover:scale-110 transition-transform cursor-none interactive" title="React"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-6 h-6 hover:scale-110 transition-transform cursor-none interactive" title="TypeScript"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" class="w-6 h-6 hover:scale-110 transition-transform cursor-none interactive" title="Vite"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-6 h-6 hover:scale-110 transition-transform cursor-none interactive" title="Tailwind CSS"/>
+<span class="text-[10px] font-label text-zinc-600 uppercase">React</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">TypeScript</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">Vite</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">Tailwind CSS</span>
 </div>
 <div class="h-[1px] bg-outline-variant/20 mb-6"></div>
-<div class="flex flex-wrap items-center justify-between gap-4">
-<a class="flex items-center gap-2 text-xs font-label uppercase tracking-widest hover:text-primary transition-colors" href="https://lovable.dev/projects/16b0ac81-470d-4dda-85ad-c9fbfb24b00a" target="_blank" rel="noopener noreferrer">
-View Live <span class="material-symbols-outlined text-sm">open_in_new</span>
+<a class="flex items-center gap-2 text-xs font-label uppercase tracking-widest hover:text-primary transition-colors" href="https://github.com/Jatzz26" target="_blank" rel="noopener noreferrer">
+View on GitHub <span class="material-symbols-outlined text-sm">open_in_new</span>
 </a>
-<a class="flex items-center gap-2 text-xs font-label uppercase tracking-widest hover:text-primary transition-colors" href="https://github.com/Jatzz26/mitr" target="_blank" rel="noopener noreferrer">
-View on GitHub <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
 </div>
 </article>
 <!-- Project Card 3: Simon Says Game -->
 <article class="group relative bg-surface-container-low p-8 flex flex-col justify-between">
 <div class="mb-12">
 <div class="aspect-square bg-surface-container-highest mb-8 overflow-hidden rounded-lg">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100" data-alt="Interactive browser game" src="/public/simonsays.jpg"/>
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100" data-alt="Interactive browser game" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCnewAo7_cObU57CDEyfzPqGKIDpdrmNeZc_w9vaEheXwaA3zp4bOoq1C2ZCtydhfrdRUpQ1v0dP800e9ulrvznUSGhq8qAVEbHcam44l8zOXgUxpe4NxMPsCQ1zyQDPQsNXfgdvFBQ3xGuxw-4SXNXA7lhxeubs766Rb5EQmYKFBarh4JSQDJa27XaFrwuQztiYd32P2MwfhP3XMiIGIFlNrEVtWwplglEazivysXtHCQqlaDhBJhQYQd_AgKHfNIsLT_2VgS6Rw1"/>
 </div>
 <span class="text-[10px] font-label tracking-[0.2em] uppercase text-primary mb-2 block">Browser Game</span>
 <h3 class="text-2xl font-bold mb-4">Simon Says Game</h3>
@@ -248,17 +238,69 @@ View on GitHub <span class="material-symbols-outlined text-sm">arrow_forward</sp
 </div>
 <div>
 <div class="flex flex-wrap gap-3 mb-6">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="w-6 h-6 hover:scale-110 transition-transform cursor-none interactive" title="HTML5"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-6 h-6 hover:scale-110 transition-transform cursor-none interactive" title="CSS3"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-6 h-6 hover:scale-110 transition-transform cursor-none interactive" title="JavaScript"/>
+<span class="text-[10px] font-label text-zinc-600 uppercase">HTML5</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">CSS3</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">JavaScript</span>
 </div>
 <div class="h-[1px] bg-outline-variant/20 mb-6"></div>
-<div class="flex flex-wrap items-center justify-between gap-4">
-<a class="flex items-center gap-2 text-xs font-label uppercase tracking-widest hover:text-primary transition-colors" href="https://jatzz26.github.io/simon_says_game/" target="_blank" rel="noopener noreferrer">
-View Live <span class="material-symbols-outlined text-sm">open_in_new</span>
+<a class="flex items-center gap-2 text-xs font-label uppercase tracking-widest hover:text-primary transition-colors" href="https://github.com/Jatzz26" target="_blank" rel="noopener noreferrer">
+View on GitHub <span class="material-symbols-outlined text-sm">open_in_new</span>
 </a>
-<a class="flex items-center gap-2 text-xs font-label uppercase tracking-widest hover:text-primary transition-colors" href="https://github.com/Jatzz26/simon_says_game" target="_blank" rel="noopener noreferrer">
-View on GitHub <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</article>
+<!-- Project Card 4: AI Interview Platform -->
+<article class="group relative bg-surface-container-low p-8 flex flex-col justify-between">
+<div class="mb-12">
+<div class="aspect-square bg-surface-container-highest mb-8 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100" data-alt="AI Interview Platform" src="C:\Users\Lenovo\.gemini\antigravity\brain\6d136824-ce64-4045-bab9-099e9b898845\ai_interview_prep_1777665069347.png"/>
+</div>
+<span class="text-[10px] font-label tracking-[0.2em] uppercase text-primary mb-2 block">Full-Stack Application</span>
+<h3 class="text-2xl font-bold mb-4">GenAI Interview Prep</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6"><span class="text-primary">AI Integration:</span> A comprehensive platform featuring an <span class="text-on-surface">ATS-friendly resume generator</span> and AI-driven automated interview preparation reports. Deployed with Docker on Render.</p>
+</div>
+<div>
+<div class="flex flex-wrap gap-3 mb-6">
+<span class="text-[10px] font-label text-zinc-600 uppercase">React</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">Node.js</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">Puppeteer</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">Gemini AI</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">Docker</span>
+</div>
+<div class="h-[1px] bg-outline-variant/20 mb-6"></div>
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-2 text-xs font-label uppercase tracking-widest hover:text-primary transition-colors" href="https://github.com/Jatzz26/Interview-Prep" target="_blank" rel="noopener noreferrer">
+View on GitHub <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="flex items-center gap-2 text-xs font-label uppercase tracking-widest text-primary hover:text-white transition-colors" href="https://interview-prep-1-5dz1.onrender.com" target="_blank" rel="noopener noreferrer">
+Live Demo <span class="material-symbols-outlined text-sm">rocket_launch</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Project Card 5: Engineering Portfolio -->
+<article class="group relative bg-surface-container-low p-8 flex flex-col justify-between">
+<div class="mb-12">
+<div class="aspect-square bg-surface-container-highest mb-8 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100" data-alt="Engineering Portfolio" src="C:\Users\Lenovo\.gemini\antigravity\brain\6d136824-ce64-4045-bab9-099e9b898845\portfolio_website_1777665091076.png"/>
+</div>
+<span class="text-[10px] font-label tracking-[0.2em] uppercase text-tertiary mb-2 block">Web Application</span>
+<h3 class="text-2xl font-bold mb-4">Engineering Portfolio</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6"><span class="text-tertiary-dim">Modern Design:</span> A sleek, dark-themed personal portfolio with <span class="text-on-surface">glassmorphism UI</span>, dynamic micro-animations, and full-stack integration to elegantly display engineering works.</p>
+</div>
+<div>
+<div class="flex flex-wrap gap-3 mb-6">
+<span class="text-[10px] font-label text-zinc-600 uppercase">HTML5</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">Tailwind CSS</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">Express</span>
+<span class="text-[10px] font-label text-zinc-600 uppercase">JavaScript</span>
+</div>
+<div class="h-[1px] bg-outline-variant/20 mb-6"></div>
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-2 text-xs font-label uppercase tracking-widest hover:text-primary transition-colors" href="https://github.com/Jatzz26/Portfolio" target="_blank" rel="noopener noreferrer">
+View on GitHub <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="flex items-center gap-2 text-xs font-label uppercase tracking-widest text-primary hover:text-white transition-colors" href="https://portfolio1-qj50.onrender.com" target="_blank" rel="noopener noreferrer">
+Live Demo <span class="material-symbols-outlined text-sm">rocket_launch</span>
 </a>
 </div>
 </div>
