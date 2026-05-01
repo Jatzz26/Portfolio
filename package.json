@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Full-stack portfolio deployment configuration",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "install-backend": "cd backend && npm install",
+    "build": "npm run install-backend",
+    "dev": "cd backend && npm run dev"
+  },
+  "author": "Jatin Pathak",
+  "license": "ISC"
+}
